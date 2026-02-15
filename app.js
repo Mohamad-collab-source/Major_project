@@ -115,7 +115,7 @@ app.use('/',userrouter);
 
 
 //if entered route doesn't match any routes then 
-app.use((req,res,next)=>{
+app.use((req,res,next)=>{ 
     
     next(new ExpressError(404,"page not found!"));
 })
