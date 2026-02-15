@@ -1,0 +1,232 @@
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+    flex:1;
+}
+ .navbar {
+    height: 5rem;
+    background-color: white;
+ }
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+
+/* footer styling*/
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover{
+  
+ text-decoration: underline;
+}
+/* making footer as flex*/
+.f-info {
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;
+
+}
+/* */
+.f-info-links,.f-info-socials {
+    width: 100%;
+   margin-top: 10px;
+}
+
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info-brand{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* styling for cards */
+.card-listing{
+    border: none!important;
+    
+    margin-bottom: 2rem;
+   
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100%;
+    height: 170px;        /* 🔥 reduce image size */
+    object-fit: cover;    /* keeps image nicely cropped */
+}
+
+
+.card-body{
+    padding: 0  !important;
+    
+}
+.card-text p {
+    font-weight: 400 !important;
+}
+
+/* listing-link */
+.listing-link {
+    text-decoration: none ;
+}
+/* card effect or overly effect */
+
+.card-img-overlay{
+    opacity: 0;
+
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+/* new.ejs */
+.new-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* edit.ejs */
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+/* show page */
+.show-img {
+   height: 30vh;  
+}
+
+.btns{
+    display: flex;
+
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* // review card */
+
+
+
+    /* map */
+    #map { 
+         width: 80vh;
+         height: 400px;
+         }
+ /* for filters */
+
+  #filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Each filter box */
+.filter {
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+/* Make anchor behave like a block container */
+.filter a {
+  text-decoration: none;     /* remove underline */
+  color: inherit;            /* keep same text color */
+  display: flex;             /* restore layout */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover effect (correct selector) */
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Icon styling */
+.filter i {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Text */
+.filter p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+    .show-gst {
+      display: none;
+    }
+    .tax-toggle {
+  border: 2px solid black;
+  border-radius: 1rem;
+  height: 3.2rem;
+  margin-left: 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content:space-around;   /* keeps content aligned */
+
+  padding: 1rem;
+  text-align: center;
+
+  flex: 0 0 auto;   /* 🔥 prevents flexbox from resizing it */
+}
+
+   /* screen size for filters */
+@media (max-width:1000px){
+      #filters{
+        display: none;
+      }
+    }
+@media (max-width:1286px){
+    .tax-toggle {
+        display: none;
+      }
+    }
+
+    /* // styleing for search btn */
+
+    .btn-search {
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+  }
+  :hover.btn-search {
+     background-color: red;
+    color: white;
+  }
+  .search-icon {
+    display: inline;
+    margin-right: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .inp-search{
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
+     
